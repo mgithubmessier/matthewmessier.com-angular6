@@ -1,0 +1,3 @@
+<button mat-raised-button (click)="onClick(header)" color="primary" [disableRipple]="false" *ngFor="let header of sectionHeadings" fxLayoutAlign="center center">
+    <h1 [textContent]="header"></h1>
+</button>

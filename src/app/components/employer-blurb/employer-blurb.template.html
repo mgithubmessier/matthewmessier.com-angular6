@@ -1,0 +1,10 @@
+<div fxLayoutGap="5px" fxLayout="row" #headerRef>
+    <img [src]="iconSrc">
+    <div fxLayout="column" fxLayoutAlign="start" class="blurb-section">
+        <h3 [textContent]="header"></h3>
+        <ng-container *ngIf="showBlurb">
+            <span class="timeline" [textContent]="timeline"></span>
+            <span [textContent]="blurb"></span>
+        </ng-container>
+    </div>
+</div>

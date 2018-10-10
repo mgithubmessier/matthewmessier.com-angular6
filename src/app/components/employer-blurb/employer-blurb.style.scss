@@ -1,0 +1,22 @@
+@import '../../app.component.scss';
+.blurb-section {
+    text-align: left;
+}
+h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.timeline {
+    opacity: .65;
+    margin-bottom: 5px;
+}
+img {
+    width: 50px;
+    height: 50px;
+}
+@media screen and (min-width: $xs) {
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
