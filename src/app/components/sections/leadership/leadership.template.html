@@ -1,0 +1,7 @@
+<div fxLayout="column" fxLayoutGap="10px">
+    <blurb *ngFor="let blurb of blurbs" 
+        [iconSrc]="blurb?.iconSrc" 
+        [blurbs]="blurb?.blurbs"
+        [header]="blurb?.header"
+        [timeline]="blurb?.timeline"></blurb>
+</div>

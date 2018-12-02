@@ -1,12 +1,12 @@
 <div fxLayout.xs="column" fxLayout.gt-xs="row">
-    <nav 
+    <nav
         (headingSelected)="selectedHeading=$event" 
         [sectionHeadings]="getHeadings()" 
         fxLayout="column" 
         fxLayoutAlign="space-around center start">
     </nav>
-    <about *ngIf="selectedHeading==='About' || !selectedHeading"></about>
-    <education *ngIf="selectedHeading==='Education'"></education>
-    <experience *ngIf="selectedHeading==='Experience'"></experience>
-    <leadership *ngIf="selectedHeading==='Leadership'"></leadership>
+    <about fxFlex="80%" *ngIf="selectedHeading==='About' || !selectedHeading"></about>
+    <education fxFlex="80%" *ngIf="selectedHeading==='Education'"></education>
+    <experience fxFlex="80%" *ngIf="selectedHeading==='Experience'"></experience>
+    <leadership fxFlex="80%" *ngIf="selectedHeading==='Leadership'"></leadership>
 </div>

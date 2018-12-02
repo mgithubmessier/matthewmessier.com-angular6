@@ -1,7 +1,7 @@
 <div fxLayout="column" fxLayoutGap="10px">
-    <employer-blurb *ngFor="let employerBlurb of employerBlurbs" 
-        [iconSrc]="employerBlurb?.iconSrc" 
-        [blurbs]="employerBlurb?.blurbs"
-        [header]="employerBlurb?.header"
-        [timeline]="employerBlurb?.timeline"></employer-blurb>
+    <blurb *ngFor="let blurb of blurbs" 
+        [iconSrc]="blurb?.iconSrc" 
+        [blurbs]="blurb?.blurbs"
+        [header]="blurb?.header"
+        [timeline]="blurb?.timeline"></blurb>
 </div>

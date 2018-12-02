@@ -7,9 +7,9 @@ import { ContentService } from '../../../services/content/content.service';
     templateUrl: './experience.template.html'
 })
 export class ExperienceComponent {
-    employerBlurbs: Array<BlurbModel>;
+    blurbs: Array<BlurbModel>;
     constructor(private contentService: ContentService) {}
     ngOnInit() {
-        this.contentService.get('experience').subscribe((experience: Array<BlurbModel>) => this.employerBlurbs = experience);
+        this.contentService.get('experience').subscribe((experience: Array<BlurbModel>) => this.blurbs = experience);
     }
 }

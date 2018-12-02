@@ -4,11 +4,7 @@ $sm: 960px;
 $md: 1280px;
 $lg: 1920px;
 $xl: 5000px;
-@font-face {
-    font-family: europe-underground;
-    src: url('/../assets/fonts/EuropeUnderground_light.ttf') format('truetype'),
-         url('/../assets/fonts/EuropeUnderground_black.ttf') format('truetype');
-}
+
 @font-face {
     font-family: raleway;
     src: 
@@ -31,13 +27,20 @@ nav+* {
     padding: 1em;
     background-color: rgba(183, 28, 28, 0.5);
 }
+
 @media screen and (min-width: $xs) {
     nav {
         height: 100vh;
     }
+    // about, experience, education, leadership {
+    //     width: calc($xs;
+    // }
 }
 @media screen and (max-width: $xs) {
     nav {
         width: 100vw;
     }
+    // div > *:not(nav) {
+    //     min-width: default;
+    // }    
 }

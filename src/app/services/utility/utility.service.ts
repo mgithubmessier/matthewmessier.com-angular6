@@ -5,6 +5,6 @@ export class UtilityService {
                 return true;
             } 
             element = element.parentElement;
-        } while(element.parentElement);
+        } while(element && element.parentElement);
     }
 }

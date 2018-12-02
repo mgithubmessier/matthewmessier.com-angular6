@@ -2,10 +2,13 @@
 @import '../../app.component.scss';
 :host {
     cursor: pointer;
-    background-color: map-get($mat-red, 800);
+    background-color: map-get($mat-red, 700);
+    border-radius: 5px;
+    > div {
+        padding: 10px;
+    }
 }
-div {
-    padding: 10px;
+a {
 }
 .blurb-section {
     text-align: left;

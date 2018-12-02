@@ -1,4 +1,4 @@
-import { Component, Input, ViewChildren, EventEmitter, Output } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
 @Component({
     selector: 'nav',
     templateUrl: './nav.template.html',

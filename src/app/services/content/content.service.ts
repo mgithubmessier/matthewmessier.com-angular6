@@ -30,7 +30,7 @@ export class ContentService {
                         ]
                     },
                     {
-                        iconSrc: '../../assets/baycoastbank.png',
+                        iconSrc: '../../assets/baycoastbank.jpeg',
                         header: 'Information Technology Intern',
                         timeline: 'May 2014 - August 2014',
                         blurbs: [
@@ -60,7 +60,25 @@ export class ContentService {
                     iconSrc: '../../assets/stonehill.png',
                     header: 'Bachelor of the Arts: Economics',
                     timeline: 'May 2016'
-                }] as Array<BlurbModel>)
+                }] as Array<BlurbModel>);
+            case 'leadership':
+                return of([{
+                    iconSrc: '../../assets/stonehill.png',
+                    header: 'Academic Leadership: Teacher’s Assistant for Computer Science I',
+                    timeline: 'Fall 2014 - May 2016',
+                    blurbs: [
+                        'Supporting students wishing to gain a complete understanding of Java Programming fundamentals.',
+                        'Correcting programming assignments providing experience with analyzing others’ code.'
+                    ]
+                }, {
+                    iconSrc: '../../assets/acm.png',
+                    header: 'Association for Computing Machinery: President, Stonehill College Chapter',
+                    timeline: 'Spring 2013 - May 2016',
+                    blurbs: [
+                        'Consulting with other officers to bring in professional speakers (i.e. Amazon).',
+                        'Collaborating in planning computer programming competition events.'
+                    ]
+                }]);
         }
     }
 }
