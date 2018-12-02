@@ -13,7 +13,7 @@ export class BlurbComponent {
     @Input() header: string;
     @Input() timeline: string;
     @ViewChild('headerRef') headerRef: MatButton;
-    private showBlurb: boolean;
+    showBlurb: boolean;
     constructor(private utilityService: UtilityService) {}
 
     @HostListener('document:click', ['$event'])
