@@ -26,21 +26,30 @@ $xl: 5000px;
 nav+* {
     padding: 1em;
     background-color: rgba(183, 28, 28, 0.5);
+    max-height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
 }
-
+@media screen and (min-width: $md) {
+    :host > div {
+        font-size: 1.3em !important;
+    }
+}
+@media screen and (min-width: $sm) {
+    :host {
+        font-size: 1.2em !important;
+    }
+}
 @media screen and (min-width: $xs) {
     nav {
         height: 100vh;
     }
-    // about, experience, education, leadership {
-    //     width: calc($xs;
-    // }
 }
 @media screen and (max-width: $xs) {
+    div {
+        font-size: 1em !important;
+    }
     nav {
         width: 100vw;
     }
-    // div > *:not(nav) {
-    //     min-width: default;
-    // }    
 }

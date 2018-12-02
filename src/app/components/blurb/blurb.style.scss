@@ -8,8 +8,6 @@
         padding: 10px;
     }
 }
-a {
-}
 .blurb-section {
     text-align: left;
 }
@@ -26,6 +24,7 @@ img {
     height: 50px;
 }
 li {
+    font-size: 0.9em;
     margin-bottom: 10px; 
 }
 @media screen and (min-width: $xs) {
