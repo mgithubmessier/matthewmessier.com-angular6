@@ -2,7 +2,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { NavComponent } from './nav/nav.component';
-import { EmployerBlurbComponent } from './employer-blurb/employer-blurb.component';
+import { BlurbComponent } from './blurb/blurb.component';
 import { AboutComponent, EducationComponent, ExperienceComponent, LeadershipComponent } from './sections';
 import { ContentService } from '../services/content/content.service';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -16,7 +16,7 @@ import { UtilityService } from '../services/utility/utility.service';
     ExperienceComponent,
     LeadershipComponent,
     NavComponent,
-    EmployerBlurbComponent
+    BlurbComponent
   ],
   exports: [
     AboutComponent,
@@ -24,7 +24,7 @@ import { UtilityService } from '../services/utility/utility.service';
     ExperienceComponent,
     LeadershipComponent,
     NavComponent,
-    EmployerBlurbComponent
+    BlurbComponent
   ],
   providers: [ContentService, UtilityService],
   imports: [

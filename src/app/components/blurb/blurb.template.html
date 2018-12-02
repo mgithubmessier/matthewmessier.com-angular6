@@ -3,6 +3,9 @@
     <div fxLayout="column" fxLayoutAlign="start" class="blurb-section">
         <h3 [textContent]="header"></h3>
         <span class="timeline" [textContent]="timeline"></span>
-        <span [textContent]="blurb" *ngIf="showBlurb"></span>
+        <ul *ngIf="showBlurb">
+            <li *ngFor='let blurb of blurbs' [textContent]='blurb'></li>
+        </ul>
+        <span [innerHTML]="blurb" *ngIf="showBlurb"></span>
     </div>
 </div>

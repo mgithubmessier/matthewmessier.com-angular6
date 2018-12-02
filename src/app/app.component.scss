@@ -4,11 +4,28 @@ $sm: 960px;
 $md: 1280px;
 $lg: 1920px;
 $xl: 5000px;
-
+@font-face {
+    font-family: europe-underground;
+    src: url('/../assets/fonts/EuropeUnderground_light.ttf') format('truetype'),
+         url('/../assets/fonts/EuropeUnderground_black.ttf') format('truetype');
+}
+@font-face {
+    font-family: raleway;
+    src: 
+        //  url('/../assets/fonts/Raleway-Bold.ttf') format('truetype');
+        //  url('/../assets/fonts/Raleway-ExtraBold.ttf') format('truetype');
+        //  url('/../assets/fonts/Raleway-ExtraLight.ttf') format('truetype');
+        //  url('/../assets/fonts/Raleway-Heavy.ttf') format('truetype'),
+         url('/../assets/fonts/Raleway-Light.ttf') format('truetype');
+        //  url('/../assets/fonts/Raleway-Medium.ttf') format('truetype'),
+        //  url('/../assets/fonts/Raleway-Regular.ttf') format('truetype'),
+        //  url('/../assets/fonts/Raleway-SemiBold.ttf') format('truetype'),
+        //  url('/../assets/fonts/Raleway-Thin.ttf') format('truetype');
+}
 * {
-    font-family: sans-serif;
+    font-family: raleway;
+    font-weight: lighter;
     color: white;
-    font-weight: 100;
 }
 nav+* {
     padding: 1em;

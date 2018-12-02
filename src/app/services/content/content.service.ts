@@ -1,12 +1,12 @@
 import { Injectable } from "@angular/core";
-import { EmployerBlurbModel } from '../../components/employer-blurb/employer-blurb.model';
+import { BlurbModel } from '../../components/blurb/blurb.model';
 import { Observable } from "rxjs";
 
 import { of } from "rxjs";
 
 @Injectable()
 export class ContentService {
-    get(route): Observable<Array<EmployerBlurbModel>> {
+    get(route): Observable<any> {
         switch(route) {
             case 'experience':
                 return of([
@@ -14,31 +14,53 @@ export class ContentService {
                         iconSrc: '../../assets/fidelity.png',
                         header: 'Software Engineer',
                         timeline: 'September 2016 - October 2018',
-                        blurb: 'This position involves developing Angular 2+ components, modules, services, and animations for client facing applications. It also entails corresponding with Java service developers via Node.js middleware, a scrum master, business analysts, on a two week sprint, monthly release, and self organizing Agile scrum team.',
-                        link: 'https://www.linkedin.com/company/fidelity-investments/'
+                        blurbs: [
+                            'Developing Angular 2+ components, modules, services, and animations for client facing applications.',
+                            'Corresponding with Java service developers, a scrum master, business analysts, on a two week sprint, monthly release, and self organizing Agile scrum team.',
+                            'Received the “Excellence in Action” award in the “Act as One Team” category.'
+                        ]
                     },
                     {
                         iconSrc: '../../assets/fidelity.png',
                         header: 'Technical Intern',
                         timeline: 'June 2015 - August 2015',
-                        blurb: 'Software engineering and legacy code management. Developed though the Agile software process. Converted a legacy C#/.NET desktop web automation system into an updated Java system. Developed on SahiPro and Selenium\'s backend.',
-                        link: 'https://www.linkedin.com/company/fidelity-investments/'
+                        blurbs: [
+                            'Developed a desktop application that expedites quality assurance testing pop.',
+                            'Conducted demonstrations and smoke tests, the program was then internally distributed.'
+                        ]
                     },
                     {
                         iconSrc: '../../assets/baycoastbank.png',
                         header: 'Information Technology Intern',
                         timeline: 'May 2014 - August 2014',
-                        blurb: 'Software, Hardware, and Network management, including hardware repairs and replacement, software troubleshooting, and using network administrator capabilities to help employees throughout several locations.',
-                        link: 'https://www.linkedin.com/company/baycoast-bank-2/'
+                        blurbs: [
+                            'Provided bank employees and customers with hardware and software support as a network administrator.',
+                            'Aided supervisors in setup and maintenance of bank servers.'
+                        ]
                     },
                     {
                         iconSrc: '../../assets/kvh.png',
                         header: 'Software Engineering Intern',
                         timeline: 'May 2013 - August 2013',
-                        blurb: 'The internship position is centered on maintaining software applications in close coordination with Senior Software Engineers. Primarily, the internship requires improving speed, performance and usability in these applications. The position also contains duties such as conducting system tests and correcting software defects.',
-                        link: 'https://www.linkedin.com/company/kvh-industries-inc-/'
+                        blurbs: [
+                            'Developed a more efficient program for flashing a GPS System.',
+                            'Collaborated with a senior software engineer to solve GPS connectivity issues by gathering extensive data on users’ issues with KHV Industries’ GPS systems by testing KVH satellites’ connections with users\' devices.'
+                        ]
                     }                
-            ])
+                ] as Array<BlurbModel>);
+            case 'about':
+                return of(['coffee.', 'computers.', 'music.', 'movies.'] as Array<string>);
+            case 'education':
+                return of([{
+                    iconSrc: '../../assets/stonehill.png',
+                    header: 'Bachelor of the Sciences: Computer Science',
+                    timeline: 'May 2016'
+                }, 
+                {
+                    iconSrc: '../../assets/stonehill.png',
+                    header: 'Bachelor of the Arts: Economics',
+                    timeline: 'May 2016'
+                }] as Array<BlurbModel>)
         }
     }
 }

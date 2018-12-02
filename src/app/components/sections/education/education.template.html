@@ -1,0 +1,7 @@
+<div fxLayout="column" fxLayoutGap="10px">
+        <employer-blurb *ngFor="let educationBlurb of educationBlurbs" 
+            [iconSrc]="educationBlurb?.iconSrc" 
+            [blurb]="educationBlurb?.blurb"
+            [header]="educationBlurb?.header"
+            [timeline]="educationBlurb?.timeline"></employer-blurb>
+    </div>

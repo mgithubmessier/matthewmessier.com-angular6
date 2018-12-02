@@ -1,4 +1,12 @@
+@import '../../../styles.scss';
 @import '../../app.component.scss';
+:host {
+    cursor: pointer;
+    background-color: map-get($mat-red, 800);
+}
+div {
+    padding: 10px;
+}
 .blurb-section {
     text-align: left;
 }
@@ -13,6 +21,9 @@ h3 {
 img {
     width: 50px;
     height: 50px;
+}
+li {
+    margin-bottom: 10px; 
 }
 @media screen and (min-width: $xs) {
     img {
