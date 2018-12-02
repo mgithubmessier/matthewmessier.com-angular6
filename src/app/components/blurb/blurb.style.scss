@@ -4,8 +4,10 @@
     cursor: pointer;
     background-color: map-get($mat-red, 700);
     border-radius: 5px;
-    > div {
+    > button {
         padding: 10px;
+        width: 100%;
+        white-space: normal;
     }
 }
 .blurb-section {
@@ -26,6 +28,10 @@ img {
 li {
     font-size: 0.9em;
     margin-bottom: 10px; 
+}
+.mat-raised-button, button {
+    font-size: 1em !important;
+    margin: 0;
 }
 @media screen and (min-width: $xs) {
     img {

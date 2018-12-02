@@ -78,7 +78,7 @@ export class ContentService {
                         'Consulting with other officers to bring in professional speakers (i.e. Amazon).',
                         'Collaborating in planning computer programming competition events.'
                     ]
-                }]);
+                }] as Array<BlurbModel>);
         }
     }
 }

@@ -1,5 +1,7 @@
 import { Component, Input, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { UtilityService } from 'src/app/services/utility/utility.service';
+import { MatButton } from '@angular/material';
+
 @Component({
     selector: 'blurb',
     templateUrl: './blurb.template.html',
@@ -10,12 +12,12 @@ export class BlurbComponent {
     @Input() blurbs: string;
     @Input() header: string;
     @Input() timeline: string;
-    @ViewChild('headerRef') headerRef: ElementRef;
+    @ViewChild('headerRef') headerRef: MatButton;
     private showBlurb: boolean;
     constructor(private utilityService: UtilityService) {}
 
     @HostListener('document:click', ['$event'])
     onClick($event) {
-        this.showBlurb = this.utilityService.hasParent($event.target, this.headerRef.nativeElement);
+        this.showBlurb = this.utilityService.hasParent($event.target, this.headerRef._elementRef.nativeElement);
     }
 }

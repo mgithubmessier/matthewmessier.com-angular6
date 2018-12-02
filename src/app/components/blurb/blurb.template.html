@@ -1,4 +1,5 @@
-<div fxLayoutGap="5px" fxLayout="row" #headerRef>
+<button mat-raised-button color="primary" #headerRef>
+<div fxLayoutGap="5px" fxLayout="row">
     <img [src]="iconSrc">
     <div fxLayout="column" fxLayoutAlign="start" class="blurb-section">
         <h3 [textContent]="header"></h3>
@@ -10,3 +11,4 @@
         <span [innerHTML]="blurb" *ngIf="showBlurb"></span>
     </div>
 </div>
+</button>
