@@ -19,7 +19,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-              "src/assets"
+              "src/assets/me.jpg",
+              "src/assets/acm.png",
+              "src/assets/baycoastbank.jpeg",
+              "src/assets/fidelity.png",
+              "src/assets/kvh.png",
+              "src/assets/stonehill.png",
+              "src/assets/fonts/Raleway-Light.ttf"
             ],
             "styles": [
               "src/styles.scss"
