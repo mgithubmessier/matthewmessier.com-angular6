@@ -13,19 +13,13 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/matthewmessier",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-              "src/assets/me.jpg",
-              "src/assets/acm.png",
-              "src/assets/baycoastbank.jpeg",
-              "src/assets/fidelity.png",
-              "src/assets/kvh.png",
-              "src/assets/stonehill.png",
-              "src/assets/fonts/Raleway-Light.ttf"
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"

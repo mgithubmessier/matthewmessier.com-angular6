@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href https://mgithubmessier.github.io/matthewmessier.com-angular6/index.html",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
