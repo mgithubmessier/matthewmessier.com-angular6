@@ -38,7 +38,8 @@ $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 }
 
 body {
-    height:100vh;
-    margin: 0;
-    background-color: black;
+    background-image: url('/../assets/me.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }

@@ -12,6 +12,7 @@
 }
 .blurb-section {
     text-align: left;
+    line-height: 1.3;
 }
 h3 {
     margin-top: 0;
@@ -25,7 +26,7 @@ img {
     width: 50px;
     height: 50px;
 }
-li {
+li:not(:last-of-type) {
     font-size: 0.9em;
     margin-bottom: 10px; 
 }
