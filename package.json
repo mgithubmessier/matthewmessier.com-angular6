@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "publish": "ngh"
+    "publish": "ngh",
+    "deploy": "npm run build && npm run publish"
   },
   "private": true,
   "dependencies": {
