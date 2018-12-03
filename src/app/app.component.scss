@@ -5,12 +5,27 @@ $md: 1280px;
 $lg: 1920px;
 $xl: 5000px;
 
-.body-container {
-    background-image: url('/./assets/me.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 1em;
+.body- {
+    &background {
+        z-index: -1;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        background-image: url('/../assets/me.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        +* {
+            max-height: 100vh;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+    }
+    &container {
+        position: relative;
+        margin: 1em;
+    }
 }
 
 @media screen and (min-width: $md) {
