@@ -5,13 +5,14 @@ $md: 1280px;
 $lg: 1920px;
 $xl: 5000px;
 
-nav+* {
+.body-container {
+    background-image: url('/./assets/me.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     padding: 1em;
-    background-color: rgba(183, 28, 28, 0.5);
-    max-height: 100vh;
-    overflow: hidden;
-    overflow-y: scroll;
 }
+
 @media screen and (min-width: $md) {
     :host > div {
         font-size: 1.3em !important;
