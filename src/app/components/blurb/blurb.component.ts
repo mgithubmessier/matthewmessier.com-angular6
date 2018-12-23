@@ -17,6 +17,6 @@ export class BlurbComponent {
 
     @HostListener('document:click', ['$event'])
     onClick($event) {
-        this.showBlurb = this.utilityService.hasParent($event.target, this.elementRef.nativeElement);
+        this.showBlurb = this.showBlurb ? false : this.utilityService.hasParent($event.target, this.elementRef.nativeElement);
     }
 }

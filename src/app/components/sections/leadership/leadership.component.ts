@@ -4,7 +4,8 @@ import { BlurbModel } from '../../blurb/blurb.model';
 
 @Component({
     selector: 'leadership',
-    templateUrl: './leadership.template.html'
+    templateUrl: './leadership.template.html',
+    styleUrls: ['./leadership.style.scss']
 })
 export class LeadershipComponent {
     blurbs: Array<BlurbModel>;

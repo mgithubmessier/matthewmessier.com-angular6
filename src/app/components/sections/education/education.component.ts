@@ -4,7 +4,8 @@ import { BlurbModel } from '../../blurb/blurb.model';
 
 @Component({
     selector: 'education',
-    templateUrl: './education.template.html'
+    templateUrl: './education.template.html',
+    styleUrls: ['./education.style.scss']
 })
 export class EducationComponent {
     blurbs: Array<BlurbModel>;

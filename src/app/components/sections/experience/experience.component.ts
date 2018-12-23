@@ -4,7 +4,8 @@ import { ContentService } from '../../../services/content/content.service';
 
 @Component({
     selector: 'experience',
-    templateUrl: './experience.template.html'
+    templateUrl: './experience.template.html',
+    styleUrls: ['./experience.style.scss']
 })
 export class ExperienceComponent {
     blurbs: Array<BlurbModel>;
